@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>YouTube Sentiment Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="chart.umd.js"></script>
+    <script defer src="popup.js"></script>
+</head>
+<body>
+    <h2 id="video-title">YouTube Sentiment Analysis</h2>
+    <p id="comments-analyzed">Comments Analyzed: 0</p>
+    
+    <canvas id="sentimentChart"></canvas>
+    <canvas id="barChart"></canvas>
+    <!-- <canvas id="lineChart"></canvas> -->
+
+    <h3>Sentiment Summary</h3>
+    <div class="sentiment-bar">
+        <div id="positive-bar" class="bar positive"></div>
+        <div id="neutral-bar" class="bar neutral"></div>
+        <div id="negative-bar" class="bar negative"></div>
+    </div>
+    
+    <div class="legend">
+        <span class="color-box positive"></span> Positive: <span id="positive">0%</span><br>
+        <span class="color-box neutral"></span> Neutral: <span id="neutral">0%</span><br>
+        <span class="color-box negative"></span> Negative: <span id="negative">0%</span>
+    </div>
+
+    <h3>Feature Analysis</h3>
+    <table>
+        <tr><td>Camera:</td><td id="camera-score">0</td></tr>
+        <tr><td>Battery:</td><td id="battery-score">0</td></tr>
+        <tr><td>Performance:</td><td id="performance-score">0</td></tr>
+        <tr><td>Display:</td><td id="display-score">0</td></tr>
+    </table>
+</body>
+</html>

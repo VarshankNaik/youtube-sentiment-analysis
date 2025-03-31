@@ -1,0 +1,86 @@
+/* Dark Mode Theme */
+body {
+    width: 500px;
+    /* Increased width */
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Sentiment Bar */
+.sentiment-bar {
+    display: flex;
+    height: 20px;
+    width: 100%;
+}
+
+.bar {
+    height: 100%;
+}
+
+.positive {
+    background-color: #00ff00;
+}
+
+.neutral {
+    background-color: #cccccc;
+}
+
+.negative {
+    background-color: #ff3333;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.color-box {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Feature Analysis Table */
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: #222;
+    border-radius: 5px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: center;
+    color: #fff;
+}
+
+/* Chart Styling */
+canvas {
+    width: 100% !important;
+    height: 250px !important;
+    max-height: 250px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+/* Add spacing between the pie chart and graphs */
+#sentimentChart {
+    margin-bottom: 20px;
+    /* Adjust as needed */
+}
+
+#barChart {
+    margin-top: 20px;
+    /* Adjust as needed */
+}
+
+/* #lineChart {
+    margin-top: 20px;
+} */
